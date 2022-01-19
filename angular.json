@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "eae58628-ced5-4dbc-a8a9-4f8b757b2730"
+    "analytics": "2bdf7bf1-3147-48a3-809b-0e9a13d8d6be"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "template": {
+    "learning-path-angular-front": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/template",
+            "outputPath": "dist/learning-path-angular-front",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "template:build:production"
+              "browserTarget": "learning-path-angular-front:build:production"
             },
             "development": {
-              "browserTarget": "template:build:development"
+              "browserTarget": "learning-path-angular-front:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "template:build"
+            "browserTarget": "learning-path-angular-front:build"
           }
         },
         "test": {
@@ -105,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "template"
+  "defaultProject": "learning-path-angular-front"
 }
